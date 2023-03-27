@@ -1,17 +1,26 @@
-import { useState } from 'react'
+import React from 'react'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function App({ store }) {
   return (
-    <div className="App">
-      <h1>FSO2022 - Counter</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+    <div className="container">
+      <main>
+        <h1>FSO2022 - Counter</h1>
+        <article>
+          <h2>Counter: {store.getState()}</h2>
+          <div className="grid">
+            <button onClick={() => store.dispatch({ type: 'DECREMENT' })}>
+              Minus -
+            </button>
+            <button onClick={() => store.dispatch({ type: 'ZERO' })}>
+              Zero
+            </button>
+            <button onClick={() => store.dispatch({ type: 'INCREMENT' })}>
+              Plus +
+            </button>
+          </div>
+        </article>
+      </main>
     </div>
   )
 }
