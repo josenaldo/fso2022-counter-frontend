@@ -30,11 +30,11 @@ Discord and Telegram groups. Overall, Full Stack Open 2022 provides a
 comprehensive and practical introduction to modern web application development
 using the latest tools and technologies.
 
-## ✨ [Demo](#)
+## ✨ [Demo](https://fso2022-counter.vercel.app/)
 
 You can access demo of the application at the following URL:
 
--
+- <https://fso2022-counter.vercel.app/>
 
 With the demo, you can test the following features:
 

@@ -7,11 +7,14 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && npx vercel ./dist --prod"
+    "deploy": "vite build && npx vercel ./dist --prod",
+    "lint": "eslint --ext .js,.jsx --ignore-path .gitignore src ",
+    "lint:fix": "eslint --ext .js,.jsx --ignore-path .gitignore --fix src"
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "vite-plugin-eslint": "^1.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
@@ -19,6 +22,8 @@
     "@vitejs/plugin-react": "^3.1.0",
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-jest": "^27.2.1",
     "eslint-plugin-react": "^7.32.2",
     "vite": "^4.2.0"
   }
