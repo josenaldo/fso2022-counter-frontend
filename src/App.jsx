@@ -5,7 +5,7 @@ function App({ store }) {
   return (
     <div className="container">
       <main>
-        <h1>FSO2022 - Counter</h1>
+        <h1>FSO2022 - Redux Counter</h1>
         <article>
           <h2>Counter: {store.getState()}</h2>
           <div className="grid">
