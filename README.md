@@ -38,12 +38,10 @@ You can access demo of the application at the following URL:
 
 With the demo, you can test the following features:
 
--
-
-To access the demo, you can use the following credentials:
-
-- User:
-- Password:
+- Display a counter
+- Decrement the counter
+- Zero the counter
+- Increment the counter
 
 ## Prerequisites
 
@@ -61,7 +59,7 @@ yarn install
 ```
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:PORT](http://localhost:PORT) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
@@ -88,10 +86,10 @@ Runs the ESLint linter on the source code files with .js, .jsx, .ts, or .tsx ext
   yarn lint
   ```
 
-Runs the unit tests for the app using react-scripts and the testing framework set up for the project.
+Runs the ESLint linter on the source code files with .js, .jsx, .ts, or .tsx extensions located in the src directory and automatically fix any fixable problems.
 
   ```sh
-  yarn test
+  yarn lint:fix
   ```
 
 Deploy the application to the production environment.
@@ -106,14 +104,10 @@ This project uses the following technologies:
 
 ### Dependencies
 
-- [Prop-types](https://github.com/facebook/prop-types)
-  - A runtime type checking for React props and similar objects.
 - [React](https://reactjs.org/)
   - A JavaScript library for building user interfaces.
 - [React DOM](https://react.dev/reference/react-dom/components)
   - A package for working with the DOM in React.
-- [React Scripts](https://create-react-app.dev/docs/available-scripts/)
-  - A set of scripts and configuration used to create React apps.
 - [Redux](https://redux.js.org/)
   - A predictable state container for JavaScript apps.
 
